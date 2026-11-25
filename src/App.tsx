@@ -30,6 +30,7 @@ import { ClientHome } from './components/client/ClientHome';
 import { BookAppointment } from './components/client/BookAppointment';
 import { LiveTracking } from './components/client/LiveTracking';
 import { AssistanceDevis } from './components/client/AssistanceDevis';
+import { ClientAiGuideWidget } from './components/client/ClientAiGuideWidget';
 
 // Pro Screens
 import { PlanningDashboard } from './components/atelier/PlanningDashboard';
@@ -669,8 +670,17 @@ export default function App() {
 
           <FooterClient />
 
-          {/* Floating scroll down button */}
-          <div className="fixed bottom-6 right-6 z-30">
+          {/* Floating bottom-right Client AI Guide + scroll down dock */}
+          <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3">
+            <ClientAiGuideWidget
+              activeTab={clientTab}
+              currentCompte={currentCompte}
+              vehicles={vehicles}
+              quote={quote}
+              onSelectTab={setClientTab}
+              onOpenChat={() => setIsChatOpen(true)}
+              onOpenAddVehicle={() => setIsAddVehicleOpen(true)}
+            />
             <button
               onClick={handleScrollDown}
               className="w-12 h-12 rounded-full bg-[#0e1d28] text-white shadow-xl hover:bg-secondary transition-all flex items-center justify-center active:scale-95 group border border-white/10"
