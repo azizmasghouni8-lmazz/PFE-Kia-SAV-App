@@ -1,0 +1,196 @@
+<!DOCTYPE html><html class="h-full" lang="fr"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Espace Personnel &amp; Atelier — City Cars Kia</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            kia: {
+              red: '#b91c1c',
+              'red-hover': '#991b1b',
+              dark: '#0c131a',
+              card: 'rgba(16, 25, 34, 0.78)',
+              inner: 'rgba(21, 32, 43, 0.82)',
+              border: 'rgba(255, 255, 255, 0.12)',
+              subtle: '#94a3b8'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+          },
+          boxShadow: {
+            'tablet': '0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.15)',
+            'inner-glow': 'inset 0 1px 1px 0 rgba(255, 255, 255, 0.15)',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<style data-purpose="custom-styling">
+    /* Subtle reflective effect on tablet surface */
+    .tablet-bezel {
+      background: linear-gradient(145deg, #2b2e33, #151719 50%, #0d0f11);
+      box-shadow: 
+        0 30px 70px -10px rgba(0, 0, 0, 0.85),
+        0 10px 25px -5px rgba(0, 0, 0, 0.6),
+        inset 0 1px 2px rgba(255, 255, 255, 0.25),
+        inset 0 -1px 2px rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Screen glass backdrop */
+    .tablet-screen {
+      background: radial-gradient(circle at 50% 20%, rgba(20, 32, 45, 0.92) 0%, rgba(9, 15, 21, 0.97) 100%);
+    }
+
+    /* Soft reflection across screen */
+    .glass-glare {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 55%);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="h-full bg-slate-950 font-sans antialiased text-white flex items-center justify-center relative overflow-x-hidden p-2 sm:p-4 lg:p-6 select-none">
+<!-- BEGIN: Background Layer -->
+<!-- Immersive background showroom view matching the provided snapshot -->
+<div class="fixed inset-0 z-0 overflow-hidden" data-purpose="showroom-background">
+<img alt="Kia Showroom Interior" class="w-full h-full object-cover object-center filter blur-[1px] brightness-90 scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCefZyUVJQ0WFywyYaLUELnxojGF5INgJjjFkN0DZWfS5ZkD2zIB4dC9lC23Sn26xDdrE0eku2UpJ_qT5GUA6STPOl91lVwh4A1fTJ6JDe7Vyv2ShreirOpwUoVUcduFAcnHiAbsp3M9FxBUjgeLaQC7Ar6vBobuPybvuAGSCjtHJkkRWC0WTiOr3nCnUH5gGDRq3Q3B9rFgQttvLTFZdIS68iESu2hLu4Q8VHpSd83Qa_TJL4EAvP9THu8TmpXpBrUz3Q">
+<div class="absolute inset-0 bg-black/35 backdrop-blur-[2px]"></div>
+</div>
+<!-- END: Background Layer -->
+<!-- BEGIN: Main Viewport Container -->
+<main class="relative z-10 w-full max-w-4xl flex items-center justify-center my-auto" data-purpose="device-viewport">
+<!-- Tablet Frame Container -->
+<div class="tablet-bezel p-3 sm:p-4 rounded-[2.5rem] sm:rounded-[3rem] w-full max-w-[850px] transition-all duration-300">
+<!-- Tablet Screen Inside Frame -->
+<div class="tablet-screen relative rounded-[2rem] sm:rounded-[2.4rem] overflow-hidden border border-white/10 px-5 py-8 sm:px-12 sm:py-12 flex flex-col items-center justify-between min-h-[580px] sm:min-h-[640px]">
+<!-- Screen Diagonal Glare Layer -->
+<div class="glass-glare absolute inset-0 z-10"></div>
+<!-- Tablet Camera & Sensor Dot Indicator (Top Bezel integration simulated on upper side) -->
+<div class="absolute top-2.5 left-1/2 -translate-x-1/2 flex items-center space-x-2 opacity-50 z-20">
+<span class="w-1.5 h-1.5 rounded-full bg-zinc-800 ring-1 ring-white/10"></span>
+<span class="w-2 h-2 rounded-full bg-[#0a0d11] ring-1 ring-white/20"></span>
+</div>
+<!-- Left Sensors Simulation (matching reference hardware layout) -->
+<div class="hidden sm:flex absolute left-2.5 top-1/2 -translate-y-1/2 flex-col space-y-2 opacity-40 z-20">
+<span class="w-1.5 h-1.5 rounded-full bg-zinc-800"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-zinc-800"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-zinc-800"></span>
+</div>
+<!-- BEGIN: Screen Header -->
+<header class="relative z-20 w-full flex flex-col items-center text-center mt-2" data-purpose="header-section">
+<!-- Official Kia Wordmark & City Cars Text Logo -->
+<div class="flex items-center space-x-3 mb-6 sm:mb-8" data-purpose="brand-logo"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDot26WHgaEx-Ur5AQafLFk--i04dItf3W9zzaoBw1j-J49_ytgQJDB2JN0EE19mHhVXyeL5CIdNmt8dpGSgQ73cw-b6UyrnNS04uEnBiV01zDRxFlhcb-Tkt84c1jfWMT4TgdJk5tf9pLcLdAEQFv62Y16ezt1CNv8So-imGNqy0diX87HbvxWD9nwuiyfgnv7EaKDmxIFyzXD0fMijQ_5mXgpBSBJQuv8hP605BQ0Y50FA7LJ6XNSedzRnWvAPiYe3t0" alt="Kia Logo" class="h-6 sm:h-7 w-auto object-contain" style="filter: brightness(0) invert(1);"><div class="flex items-center space-x-2"><span class="text-xl sm:text-2xl font-light text-white/50 pl-1">|</span><span class="text-lg sm:text-xl font-medium tracking-wide text-white pl-1">City Cars</span></div></div>
+<!-- Section Headings -->
+<h1 class="text-2xl sm:text-3xl md:text-[2rem] font-bold tracking-tight text-white leading-snug max-w-xl">
+            Espace Personnel &amp; Atelier <br class="hidden sm:inline">
+<span class="font-light">—</span> City Cars Kia
+          </h1>
+<p class="mt-2 text-sm sm:text-base text-slate-400 font-normal tracking-wide">
+            Service Après-Vente (SAV)
+          </p>
+</header>
+<!-- END: Screen Header -->
+<!-- BEGIN: Login Form Box -->
+<section class="relative z-20 w-full max-w-[420px] mt-6 mb-4" data-purpose="login-module">
+<!-- Glassmorphism Form Card -->
+<div class="bg-kia-card backdrop-blur-md rounded-2xl border border-white/10 p-5 sm:p-7 shadow-2xl">
+<form action="#" class="space-y-4" data-purpose="authentication-form" method="POST" onsubmit="event.preventDefault();">
+<!-- Input: Email / Matricule -->
+<div class="relative">
+<label class="sr-only" for="username">Email Professionnel / Matricule</label>
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+<!-- User Avatar Icon -->
+<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+<path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<input class="w-full pl-11 pr-4 py-3 bg-[#131b24]/90 border border-slate-700/70 text-slate-100 placeholder-slate-400 text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent transition-colors" id="username" name="username" placeholder="Email Professionnel / Matricule" required="" type="text">
+</div>
+<!-- Input: Password -->
+<div class="relative">
+<label class="sr-only" for="password">Mot de passe</label>
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+<!-- Padlock Icon -->
+<svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+<path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<input class="w-full pl-11 pr-11 py-3 bg-[#131b24]/90 border border-slate-700/70 text-slate-100 placeholder-slate-400 text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-transparent transition-colors" id="password" name="password" placeholder="Mot de passe" required="" type="password">
+<!-- Visibility Toggle Button -->
+<button aria-label="Afficher ou masquer le mot de passe" class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-slate-200 transition-colors focus:outline-none" id="toggle-password" type="button">
+<!-- Eye Icon with diagonal slash (initially hidden state) -->
+<svg class="h-5 w-5" fill="none" id="eye-icon" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+<path d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+</div>
+<!-- Submit Button -->
+<div class="pt-1">
+<button class="w-full py-3 px-4 bg-[#bb162b] hover:bg-[#a11324] active:scale-[0.99] text-white font-medium text-sm rounded-lg shadow-md hover:shadow-lg transition-all duration-150 flex items-center justify-center space-x-2" type="submit">
+<span class="">Se Connecter</span>
+</button>
+</div>
+<!-- Forgot Password Link -->
+<div class="text-center pt-2">
+<a class="text-xs text-slate-300 hover:text-white underline underline-offset-4 decoration-slate-500 hover:decoration-white transition-colors" href="#">
+                  Mot de passe oublié ?
+                </a>
+</div>
+<!-- Informational Footer Notice -->
+<div class="flex items-center justify-center space-x-1.5 pt-3 text-[11.5px] text-slate-400 border-t border-white/5 mt-2">
+<svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+<path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="">Accès réservé au personnel autorisé Kia.</span>
+</div>
+</form>
+</div>
+</section>
+<!-- END: Login Form Box -->
+<!-- Bottom Spacing / Subtle Home Bar Simulation -->
+<div class="relative z-20 w-32 h-1 bg-white/20 rounded-full mt-2" data-purpose="tablet-home-indicator"></div>
+</div>
+</div>
+</main>
+<!-- END: Main Viewport Container -->
+<!-- BEGIN: Interactive Logic -->
+<script data-purpose="password-visibility-toggle">
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.getElementById('toggle-password');
+      const passwordInput = document.getElementById('password');
+      const eyeIcon = document.getElementById('eye-icon');
+
+      if (toggleBtn && passwordInput && eyeIcon) {
+        toggleBtn.addEventListener('click', () => {
+          const isPassword = passwordInput.getAttribute('type') === 'password';
+          passwordInput.setAttribute('type', isPassword ? 'text' : 'password');
+          
+          // Switch icon state
+          if (isPassword) {
+            eyeIcon.innerHTML = `
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            `;
+          } else {
+            eyeIcon.innerHTML = `
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18" />
+            `;
+          }
+        });
+      }
+    });
+  </script>
+<!-- END: Interactive Logic -->
+
+
+
+
+</body></html>

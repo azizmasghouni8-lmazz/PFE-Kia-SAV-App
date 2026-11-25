@@ -1,0 +1,6 @@
+{
+  "name": "City Cars Kia - Espace Client & Atelier SAV",
+  "description": "Portail officiel SAV City Cars Kia Tunisie : Espace Client, Réception & Check-in 360°, Ordres de Réparation et Terminal Technicien K-DMS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

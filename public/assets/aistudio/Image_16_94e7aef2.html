@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#40000a","surface":"#fbf9f9","on-error-container":"#93000a","surface-container-highest":"#e4e2e3","surface-container":"#efedee","primary-fixed-dim":"#b9c8d8","secondary":"#b70f31","on-tertiary":"#ffffff","inverse-on-surface":"#f2f0f1","outline":"#74777c","error-container":"#ffdad6","on-background":"#1b1c1c","on-secondary-fixed-variant":"#920023","on-tertiary-container":"#9d7d6c","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#ffb3b4","background":"#fbf9f9","tertiary-fixed":"#ffdbc9","error":"#ba1a1a","on-surface-variant":"#43474b","on-tertiary-fixed":"#2a170b","on-tertiary-fixed-variant":"#5b4132","inverse-primary":"#b9c8d8","on-primary-fixed":"#0e1d28","surface-variant":"#e4e2e3","tertiary-fixed-dim":"#e4bfab","surface-tint":"#51606d","on-error":"#ffffff","on-secondary":"#ffffff","on-primary-fixed-variant":"#3a4855","tertiary-container":"#2a170b","outline-variant":"#c4c7cc","tertiary":"#000000","secondary-container":"#db3047","on-secondary-container":"#fffbff","surface-bright":"#fbf9f9","on-primary":"#ffffff","surface-container-high":"#eae7e8","secondary-fixed":"#ffdad9","primary":"#000000","on-surface":"#1b1c1c","on-primary-container":"#778694","inverse-surface":"#303031","surface-container-low":"#f5f3f4","surface-dim":"#dbd9da","primary-container":"#0e1d28","primary-fixed":"#d5e4f4"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"1rem","space-lg":"1.25rem","space-xs":"0.25rem","space-xl":"1.75rem","margin":"1.5rem","margin-lg":"2rem","space-md":"0.75rem","gutter-lg":"1.5rem","space-sm":"0.5rem"},"fontFamily":{"body-md":["Hanken Grotesk"],"body-lg":["Hanken Grotesk"],"headline-sm":["Space Grotesk"],"label-lg":["JetBrains Mono"],"headline-md":["Space Grotesk"],"label-md":["JetBrains Mono"],"headline-xl":["Space Grotesk"],"label-sm":["JetBrains Mono"],"headline-lg":["Space Grotesk"],"body-sm":["Hanken Grotesk"]},"fontSize":{"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.03em","fontWeight":"500"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary selection:text-on-secondary"><aside class="fixed left-0 top-0 h-full w-64 bg-primary-container text-on-primary z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)] select-none"><div class="flex flex-col"><div class="h-16 px-gutter flex items-center justify-between bg-primary"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md tracking-wider text-on-primary font-bold">KIA</span><span class="font-label-sm text-label-sm uppercase px-space-xs py-0.5 rounded bg-secondary text-on-secondary font-bold tracking-widest">SAV</span></div><span class="font-label-sm text-label-sm text-outline-variant font-medium">CITY CARS</span></div><div class="px-gutter py-space-md bg-primary-container"><p class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">Terminal Atelier</p><p class="font-headline-sm text-headline-sm text-on-primary tracking-tight">K-DMS Tech</p></div><nav class="flex flex-col gap-space-xs px-space-sm mt-space-sm" data-active-classes="bg-secondary text-on-secondary font-bold rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-primary-fixed-dim hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="mes-travaux-du-jour" href="#"><span class="material-symbols-outlined text-[20px]">checklist</span><span class="font-label-lg text-label-lg tracking-normal">Mes Travaux du Jour</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-md transition-all bg-secondary text-on-secondary font-bold rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-path="intervention-en-cours" href="#"><span class="material-symbols-outlined text-[20px]">build_circle</span><span class="font-label-lg text-label-lg tracking-normal">Intervention en Cours</span></a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-primary-fixed-dim hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="demande-pieces-et-devis" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span class="font-label-lg text-label-lg tracking-normal">Demande Pièces &amp; Devis</span></a><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-primary-fixed-dim hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="catalogue-k-dms" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span class="font-label-lg text-label-lg tracking-normal">Catalogue K-DMS</span></a></nav></div><div class="p-space-sm bg-primary-container"><a class="flex items-center gap-space-md px-space-md py-space-md rounded-lg text-secondary-fixed-dim hover:bg-surface-container-highest hover:text-on-surface transition-all" data-path="deconnexion" href="#"><span class="material-symbols-outlined text-[20px]">power_settings_new</span><span class="font-label-lg text-label-lg tracking-normal">Déconnexion</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)] px-gutter-lg flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container-high"><span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm uppercase text-on-surface font-semibold">En Atelier</span></div><div class="flex items-center gap-space-xs"><span class="font-label-md text-label-md uppercase px-space-sm py-0.5 rounded bg-primary text-on-primary font-bold">Baie #04</span><span class="font-body-md text-body-md font-semibold text-on-surface">Karim Trabelsi</span><span class="font-label-sm text-label-sm text-on-surface-variant">(Master Kia)</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs font-label-md text-label-md bg-surface-container px-space-md py-space-xs rounded-lg text-on-surface"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">schedule</span><span class="tracking-wider">14:27:08</span><span class="font-label-sm text-label-sm text-on-surface-variant ml-space-xs">K-DMS SYNC</span></div><button class="relative flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px] text-secondary">inventory_2</span><span class="font-label-sm text-label-sm font-semibold">Alertes Pièces</span><span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">2</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-surface flex-1"><div class="flex flex-col w-full p-gutter-lg space-y-gutter-lg">
+<!-- BANDEAU SUPÉRIEUR D'INTERVENTION ACTIVE -->
+<section class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden">
+<div class="p-space-lg flex flex-col xl:flex-row xl:items-center justify-between gap-space-lg">
+<!-- Bloc Véhicule & Client -->
+<div class="flex flex-col lg:flex-row items-start lg:items-center gap-space-lg">
+<div class="relative w-28 h-20 rounded-lg overflow-hidden bg-surface-container-high flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Technical side inspection photo of a contemporary dark Kia Sportage GT-Line SUV parked in a clean professional dealership workshop bay, soft studio lighting reflecting metallic contours, high-contrast automotive diagnostic environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHdacDRyt47_4DN-HUXioDvsDGjsb3u4fy_69vDpdXFt_7k6PXeAmh1mifnmtyIqbbEinih766O8D0cpfVQB0FZvoGvdlNAEtZX_Uzi5B9oPwRV7qET1q6wa8S_hgOm9PwjolQ9bpdFAuMuxenpXTLfkZFQRQT8Zp1d_khdEsgfTfzfC_M0sVC1l5PFjDBu8tIUrkjFoNenB3Dp1VDi6w9_nP5lXAq_i0SP275Cw_KnR8PUOw9r0aIiQ"/>
+<span class="absolute bottom-1 right-1 font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary text-on-primary font-bold">GT-Line</span>
+</div>
+<div class="space-y-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Kia Sportage GT-Line 1.6 T-GDi</span>
+<span class="font-label-md text-label-md bg-surface-container-highest px-space-sm py-0.5 rounded text-on-surface font-semibold tracking-wider">228 TU 4591</span>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded bg-secondary text-on-secondary font-bold uppercase tracking-wider">OR #CC-2024-9104</span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-lg gap-y-1 text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-1">
+<span class="text-outline">VIN:</span>
+<span class="font-bold text-on-surface tracking-wider">KNA-SP8920147</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="text-outline">Kilométrage:</span>
+<span class="font-semibold text-on-surface">28 420 km</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="text-outline">Client:</span>
+<span class="font-semibold text-on-surface">M. Sami Ben Amor</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="text-outline">Emplacement:</span>
+<span class="px-space-xs py-0.5 bg-primary text-on-primary rounded text-label-sm font-bold">Pont ciseaux #04</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Chronomètre & Actions de Pointage Tactiles -->
+<div class="bg-surface-container-high rounded-xl p-space-md flex flex-wrap items-center justify-between xl:justify-end gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px] animate-spin" style="animation-duration: 9s;">timer</span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-label-lg text-[26px] leading-none font-extrabold text-on-surface tracking-tight" id="active-chrono">01:45:22</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">En cours</span>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-on-surface-variant mt-1">
+<span>Barème Kia: <strong class="text-on-surface">03:18:00</strong></span>
+<span>•</span>
+<span>Restant: <strong class="text-secondary">01:32:38</strong></span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container font-label-md text-label-md text-on-surface font-semibold shadow-sm transition-all active:scale-95" id="btn-pause-chrono" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">pause_circle</span>
+<span>Mettre en pause</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container font-label-md text-label-md text-on-surface font-semibold shadow-sm transition-all active:scale-95" id="btn-switch-task" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">swap_horiz</span>
+<span>Changer de tâche</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Barre linéaire de temps barème -->
+<div class="w-full bg-surface-container h-1.5 flex">
+<div class="bg-secondary h-full transition-all duration-500" style="width: 53%;"></div>
+<div class="bg-outline-variant h-full" style="width: 47%;"></div>
+</div>
+</section>
+<!-- COMMANDES TACTILES DE CHANGEMENT DE STATUT (STEPPER INTERACTIF XXL) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">traffic</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Progression de l'Ordre de Réparation</h2>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-space-sm py-0.5 rounded text-on-surface-variant font-semibold">SYNCHRONISATION LIVE K-DMS</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Étape 1 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex items-center justify-between relative overflow-hidden">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">check</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Étape 01</p>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Diagnostic &amp; Inspection</p>
+<span class="font-label-sm text-label-sm text-outline">Validé à 09h15</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-semibold">100%</span>
+</div>
+<!-- Étape 2 : Active Pulsante -->
+<div class="bg-secondary text-on-secondary rounded-lg p-space-md flex items-center justify-between shadow-lg relative overflow-hidden ring-4 ring-secondary/20">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-on-secondary text-secondary flex items-center justify-center font-label-lg font-bold">
+<span class="material-symbols-outlined text-[22px] animate-pulse">settings</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<p class="font-label-sm text-label-sm uppercase font-bold text-on-secondary/80">Étape 02</p>
+<span class="w-2 h-2 rounded-full bg-on-secondary animate-ping"></span>
+</div>
+<p class="font-headline-sm text-headline-sm font-bold leading-tight">En Réparation / Entretien</p>
+<span class="font-label-sm text-label-sm text-on-secondary/90">Intervention Baie #04</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-1 rounded bg-on-secondary text-secondary font-bold uppercase">En cours</span>
+</div>
+<!-- Étape 3 -->
+<button class="group bg-surface-container hover:bg-surface-container-high text-left rounded-lg p-space-md flex items-center justify-between transition-all active:scale-[0.98]" type="button">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest group-hover:bg-primary group-hover:text-on-primary text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[20px]">fact_check</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Étape 03</p>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Contrôle Qualité &amp; Essai</p>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Passer au Contrôle →</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-on-surface transition-colors">chevron_right</span>
+</button>
+<!-- Étape 4 -->
+<button class="group bg-surface-container-low hover:bg-surface-container text-left rounded-lg p-space-md flex items-center justify-between opacity-80 hover:opacity-100 transition-all active:scale-[0.98]" type="button">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Étape 04</p>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Clôture Travaux</p>
+<span class="font-label-sm text-label-sm text-outline">Prêt Restitution</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline">lock</span>
+</button>
+</div>
+<!-- Bouton Géant d'Action Rapide de Clôture d'intervention -->
+<div class="mt-space-md pt-space-md bg-surface-container-low rounded-lg p-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<span class="font-body-md text-body-md font-medium">Une fois l'ensemble des tâches cochées et validées, notifier le chef d'atelier pour contrôle final.</span>
+</div>
+<button class="w-full sm:w-auto px-space-xl py-space-md bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-headline-sm font-bold rounded-lg shadow-md transition-all active:scale-95 flex items-center justify-center gap-space-sm flex-shrink-0" type="button">
+<span class="material-symbols-outlined text-[22px] text-secondary">send</span>
+<span>TERMINER MON INTERVENTION &amp; NOTIFIER CHEF D'ATELIER</span>
+</button>
+</div>
+</section>
+<!-- CORPS PRINCIPAL EN 2 COLONNES -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- COLONNE GAUCHE : CHECKLIST TÂCHES DU BARÈME CONSTRUCTEUR (7 Colonnes) -->
+<section class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-md space-y-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Programme Officiel Kia 30 000 KM</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Checklist des Tâches Barème</h3>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm bg-surface-container px-space-md py-1 rounded-full text-on-surface font-bold">
+<span>Progression:</span>
+<span class="text-secondary font-extrabold">2 / 4 Validées</span>
+</div>
+</div>
+<!-- Item Checklist 1 : Terminé -->
+<div class="p-space-md rounded-lg bg-surface-container-low transition-colors flex items-start gap-space-md">
+<button class="mt-0.5 w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</button>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-space-xs mb-1">
+<h4 class="font-body-lg text-body-lg font-bold text-on-surface line-through decoration-secondary/60">
+              Vidange moteur huile homologuée Kia Shell Helix Ultra 0W20 + Remplacement filtre à huile &amp; joint
+            </h4>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-bold flex-shrink-0">1.2h barème</span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> TERMINÉ (Pointé à 09:42)
+            </span>
+<span>•</span>
+<span>Réf Huile: SH-0W20-KIA</span>
+<span>•</span>
+<span>Capacité: 4.8 L</span>
+</div>
+</div>
+</div>
+<!-- Item Checklist 2 : Terminé -->
+<div class="p-space-md rounded-lg bg-surface-container-low transition-colors flex items-start gap-space-md">
+<button class="mt-0.5 w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</button>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-space-xs mb-1">
+<h4 class="font-body-lg text-body-lg font-bold text-on-surface line-through decoration-secondary/60">
+              Remplacement filtre à air + filtre habitacle antibactérien
+            </h4>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-bold flex-shrink-0">0.5h barème</span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> TERMINÉ (Pointé à 10:15)
+            </span>
+<span>•</span>
+<span>Filtres OEM K-DMS montés</span>
+</div>
+</div>
+</div>
+<!-- Item Checklist 3 : Anomalie Détectée -->
+<div class="p-space-md rounded-lg bg-surface-container-highest relative overflow-hidden flex items-start gap-space-md">
+<div class="mt-0.5 w-8 h-8 rounded-lg bg-secondary text-on-secondary flex items-center justify-center flex-shrink-0 shadow-sm animate-pulse">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-space-xs mb-1">
+<h4 class="font-body-lg text-body-lg font-bold text-on-surface">
+              Contrôle usure disques et plaquettes de frein avant &amp; arrière
+            </h4>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface font-bold flex-shrink-0">0.8h barème</span>
+</div>
+<div class="mt-space-xs p-space-sm bg-surface-container-lowest rounded-md">
+<div class="flex items-center gap-space-xs text-secondary font-label-md text-label-md font-bold mb-1">
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+<span>ANOMALIE CRITIQUE DÉTECTÉE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+              Épaisseur mesurée des garnitures plaquettes avant : <strong class="text-secondary font-label-sm text-label-sm">2.1 mm</strong> (Seuil mini constructeur : 3.0 mm). Disques striés avec trace d'échauffement thermique.
+            </p>
+<div class="mt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Devis complémentaire transmis au client</span>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded bg-secondary text-on-secondary font-bold uppercase">Validé par Sami B.A.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Item Checklist 4 : En Cours -->
+<div class="p-space-md rounded-lg bg-surface-container-high transition-colors flex items-start gap-space-md">
+<button class="mt-0.5 w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-secondary hover:text-on-secondary text-secondary flex items-center justify-center flex-shrink-0 shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">radio_button_unchecked</span>
+</button>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-space-xs mb-1">
+<h4 class="font-body-lg text-body-lg font-bold text-on-surface">
+              Diagnostic électronique global valise KDS + Reset indicateur d'entretien
+            </h4>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary text-on-primary font-bold flex-shrink-0">0.5h barème</span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface font-label-sm text-label-sm">
+<span class="flex items-center gap-1 font-bold text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span> EN COURS D'EXÉCUTION
+            </span>
+<span class="text-outline">•</span>
+<span class="text-on-surface-variant">Interface VCI Connectée (VCI-BT #09)</span>
+</div>
+</div>
+</div>
+<!-- Documentations & Couples de serrage rapides -->
+<div class="pt-space-sm grid grid-cols-2 sm:grid-cols-3 gap-space-sm text-center">
+<div class="bg-surface-container p-space-sm rounded-lg">
+<p class="font-label-sm text-label-sm text-outline uppercase font-semibold">Couple Bouchon Vidange</p>
+<p class="font-label-lg text-label-lg font-bold text-on-surface">34.3 - 44.1 Nm</p>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg">
+<p class="font-label-sm text-label-sm text-outline uppercase font-semibold">Couple Roues Alu 18"</p>
+<p class="font-label-lg text-label-lg font-bold text-on-surface">107 - 127 Nm</p>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg col-span-2 sm:col-span-1">
+<p class="font-label-sm text-label-sm text-outline uppercase font-semibold">Spécif. Filtre Huile</p>
+<p class="font-label-lg text-label-lg font-bold text-on-surface">12.0 - 15.0 Nm</p>
+</div>
+</div>
+</section>
+<!-- COLONNE DROITE : FORMULAIRE DEMANDE PIÈCES & DEVIS COMPLÉMENTAIRE (5 Colonnes) -->
+<section class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-md space-y-space-md">
+<!-- Titre Section -->
+<div>
+<div class="flex items-center gap-space-xs text-secondary mb-1">
+<span class="material-symbols-outlined text-[22px]">flash_on</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">
+            Déclarer une Anomalie / Pièces &amp; Devis
+          </h3>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg">
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+<strong class="text-on-surface">Règle SAV Kia :</strong> Toute pièce non prévue dans l'OR initial doit faire l'objet d'un devis validé par le client avant montage.
+          </p>
+</div>
+</div>
+<!-- Formulaire Tactile Rapide -->
+<form class="space-y-space-md" onsubmit="event.preventDefault();">
+<!-- Recherche de Pièce K-DMS -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant block">
+            Recherche de pièce dans le stock K-DMS
+          </label>
+<div class="relative">
+<input class="w-full bg-surface-container-low font-body-md text-body-md font-semibold text-on-surface px-space-md py-space-sm rounded-lg pr-10 focus:outline-none focus:bg-surface-container-lowest" type="text" value="Plaquettes de frein avant OEM (Réf: 58101-D7A00)"/>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-on-surface-variant">search</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm px-1 text-on-surface">
+<span class="flex items-center gap-1 font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+              Stock Magasin Central : <strong class="text-secondary font-bold">14 en rayon</strong>
+</span>
+<span class="text-outline font-label-sm">Rayon B-04-12</span>
+</div>
+</div>
+<!-- Quantité & Barème MO -->
+<div class="grid grid-cols-2 gap-space-md">
+<!-- Quantité Tactile -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant block">
+              Quantité (Jeu)
+            </label>
+<div class="flex items-center bg-surface-container-low rounded-lg p-1">
+<button class="w-10 h-10 rounded-lg bg-surface-container-lowest hover:bg-surface-container font-headline-sm font-bold text-on-surface flex items-center justify-center active:scale-95 shadow-sm" type="button">-</button>
+<span class="flex-1 text-center font-label-lg text-label-lg font-bold text-on-surface">1</span>
+<button class="w-10 h-10 rounded-lg bg-surface-container-lowest hover:bg-surface-container font-headline-sm font-bold text-on-surface flex items-center justify-center active:scale-95 shadow-sm" type="button">+</button>
+</div>
+</div>
+<!-- Barème MO -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant block">
+              Barème MO Supplémentaire
+            </label>
+<div class="h-12 bg-surface-container-low rounded-lg px-space-md flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">0.7h</span>
+<span class="font-label-sm text-label-sm text-outline-variant font-medium uppercase">Standard</span>
+</div>
+</div>
+</div>
+<!-- Justificatif / Observation technicien -->
+<div class="space-y-1">
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant block">
+            Justificatif Diagnostic Technicien
+          </label>
+<textarea class="w-full bg-surface-container-low font-body-sm text-body-sm text-on-surface p-space-sm rounded-lg focus:outline-none focus:bg-surface-container-lowest resize-none" rows="2">Plaquettes à 85% d'usure (reste 2.1mm). Risque de détérioration prématurée des disques neufs lors du prochain trajet autoroutier.</textarea>
+</div>
+<!-- Preuve Photo Atelier -->
+<div class="space-y-1">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant">
+              Preuve Photo Tablette (Inspection)
+            </label>
+<button class="font-label-sm text-label-sm text-secondary font-bold hover:underline flex items-center gap-0.5" type="button">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span>
+<span>Reprendre Photo</span>
+</button>
+</div>
+<div class="relative h-28 rounded-lg overflow-hidden bg-surface-container group">
+<img class="w-full h-full object-cover" data-alt="High quality close up mechanic photo showing automotive brake disc caliper and digital vernier caliper measuring worn brake pad thickness at 2.1 millimeters, bright inspection lamp lighting on metallic automotive steel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi3b4BUz5C0hLOYG43EmN-ix4qQ002SbaT74TF5fNIkOSnR6pc2oxyJbqHxVlyaTaoXf3qgqTDd4IBfkuGdUqxZxdpKq7HL8QvJvQPgNGxCR9U7WaebvnLBuc9ZmOg08ZMmyiJCvB1D-iNveVd9ivQTbTvp680V8o_8WEa-PcJ2niWp07ai7U33bH2uiD_zREeRtX3ynWVYVV3Y9XvE-Gs69DkVRyF-76DLOZpb6akApTFvkUyCRHxZg"/>
+<div class="absolute inset-0 bg-primary/30 flex items-end p-space-sm">
+<span class="font-label-sm text-label-sm bg-primary/80 backdrop-blur-md text-on-primary px-space-sm py-0.5 rounded font-bold">
+                Jauge épaisseur : 2.1 mm (Seuil 3.0 mm)
+              </span>
+</div>
+</div>
+</div>
+<!-- Statut du Devis Client -->
+<div class="p-space-md rounded-lg bg-surface-container-high space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface">Statut du Devis Complémentaire</span>
+<span class="font-label-sm text-label-sm font-bold text-secondary bg-surface-container px-2 py-0.5 rounded">280.000 TND TTC</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span class="font-bold">VALIDÉ PAR LE CLIENT À 10:48 (Prêt à monter)</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+            Notification SMS &amp; lien d'approbation instantanée validés par signature électronique.
+          </p>
+</div>
+<!-- Bouton tactile d'envoi immédiat -->
+<button class="w-full py-space-md px-space-lg rounded-lg bg-secondary hover:bg-secondary-container text-on-secondary font-headline-sm text-headline-sm font-bold shadow-md transition-all active:scale-[0.98] flex items-center justify-center gap-space-sm" type="button">
+<span class="material-symbols-outlined text-[24px]">conveyor_belt</span>
+<span>Envoyer Demande au Magasin &amp; Chef d'Atelier</span>
+</button>
+</form>
+</section>
+</div>
+<!-- BAS DE PAGE : RACCOURCIS TECHNIQUES FLOTTANTS & OUTILS ATELIER -->
+<footer class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-md">
+<span class="font-label-sm text-label-sm uppercase text-outline font-bold">Documentation Constructeur :</span>
+<a class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high font-label-md text-label-md text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px] text-secondary">menu_book</span>
+<span>Manuel d'Atelier Sportage NQ5</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high font-label-md text-label-md text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px] text-secondary">auto_stories</span>
+<span>Schémas de Câblage &amp; Fusibles</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high font-label-md text-label-md text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px] text-secondary">water_drop</span>
+<span>Fiches Sécurité Fluides &amp; Huiles</span>
+</a>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Poste Baie #04 • V3.4.1</span>
+<button class="w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_upward</span>
+</button>
+</div>
+</footer>
+</div>
+<script>
+  // Simple Chrono Simulation for Technicians
+  let seconds = 6322; // 01:45:22
+  let isRunning = true;
+  const chronoElement = document.getElementById('active-chrono');
+  const pauseBtn = document.getElementById('btn-pause-chrono');
+
+  function updateChrono() {
+    if (!isRunning) return;
+    seconds++;
+    const hrs = String(Math.floor(seconds / 3600)).padStart(2, '0');
+    const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+    const secs = String(seconds % 60).padStart(2, '0');
+    if (chronoElement) {
+      chronoElement.textContent = `${hrs}:${mins}:${secs}`;
+    }
+  }
+
+  setInterval(updateChrono, 1000);
+
+  if (pauseBtn) {
+    pauseBtn.addEventListener('click', () => {
+      isRunning = !isRunning;
+      const label = pauseBtn.querySelector('span:last-child');
+      const icon = pauseBtn.querySelector('span:first-child');
+      if (isRunning) {
+        label.textContent = 'Mettre en pause';
+        icon.textContent = 'pause_circle';
+      } else {
+        label.textContent = 'Reprendre le chrono';
+        icon.textContent = 'play_circle';
+      }
+    });
+  }
+</script></main></div></body></html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>City Cars Kia - Espace Client SAV</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-variant": "#e4e2e3", "on-secondary-fixed": "#40000a", "on-secondary-fixed-variant": "#920023", "on-background": "#1b1c1c", "primary-fixed-dim": "#b9c8d8", "surface-container-low": "#f5f3f4", "on-secondary": "#ffffff", "secondary-container": "#db3047", "on-tertiary-container": "#9d7d6c", "secondary-fixed": "#ffdad9", "primary": "#000000", "primary-fixed": "#d5e4f4", "on-tertiary-fixed": "#2a170b", "on-tertiary": "#ffffff", "on-error": "#ffffff", "on-surface-variant": "#43474b", "on-tertiary-fixed-variant": "#5b4132", "inverse-on-surface": "#f2f0f1", "inverse-surface": "#303031", "outline": "#74777c", "secondary": "#b70f31", "on-primary": "#ffffff", "surface-dim": "#dbd9da", "surface-container": "#efedee", "surface-container-high": "#eae7e8", "secondary-fixed-dim": "#ffb3b4", "background": "#fbf9f9", "tertiary": "#000000", "surface-container-lowest": "#ffffff", "primary-container": "#0e1d28", "on-primary-fixed": "#0e1d28", "surface-bright": "#fbf9f9", "on-error-container": "#93000a", "on-primary-fixed-variant": "#3a4855", "error": "#ba1a1a", "surface-tint": "#51606d", "tertiary-container": "#2a170b", "on-primary-container": "#778694", "on-secondary-container": "#fffbff", "tertiary-fixed": "#ffdbc9", "outline-variant": "#c4c7cc", "error-container": "#ffdad6", "inverse-primary": "#b9c8d8", "on-surface": "#1b1c1c", "tertiary-fixed-dim": "#e4bfab", "surface": "#fbf9f9", "surface-container-highest": "#e4e2e3" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "gutter-lg": "1.5rem", "space-lg": "1.25rem", "space-sm": "0.5rem", "gutter": "1rem", "space-xl": "1.75rem", "margin-lg": "2rem", "space-xs": "0.25rem", "space-md": "0.75rem", "margin": "1.5rem" }, "fontFamily": { "body-lg": [ "Hanken Grotesk" ], "body-md": [ "Hanken Grotesk" ], "body-sm": [ "Hanken Grotesk" ], "label-lg": [ "JetBrains Mono" ], "label-sm": [ "JetBrains Mono" ], "headline-xl": [ "Space Grotesk" ], "headline-sm": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "label-md": [ "JetBrains Mono" ] }, "fontSize": { "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "headline-xl": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-md": [ "22px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-lg": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter-lg flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md tracking-tight font-bold text-primary uppercase">Kia</span><span class="font-headline-sm text-headline-sm text-on-surface-variant font-medium">City Cars</span></div><span class="inline-flex items-center px-space-sm py-space-xs rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm uppercase tracking-wider">Espace Client SAV</span><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container text-on-surface"><span class="material-symbols-outlined text-body-sm text-secondary">location_on</span><span class="font-body-sm text-body-sm font-semibold">Tunis La Goulette</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary text-on-primary font-body-md rounded-lg shadow-sm"><a class="px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md rounded-lg" data-path="mes-vehicules" href="#">Accueil &amp; Mes Véhicules</a><a class="px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md rounded-lg" data-path="prendre-rdv" href="#">Prendre Rendez-vous</a><a aria-current="page" class="px-space-md py-space-sm transition-all bg-primary text-on-primary font-body-md rounded-lg shadow-sm" data-path="suivi-en-direct" href="#">Suivi en Direct &amp; Historique</a><a class="px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md rounded-lg" data-path="assistance-devis" href="#">Assistance &amp; Devis</a></nav><div class="flex items-center gap-space-md"><button aria-label="Notifications" class="relative p-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="hidden md:flex flex-col text-right"><span class="font-body-md text-body-md font-semibold text-on-surface leading-tight">M. Sami Ben Amor</span><span class="font-label-sm text-label-sm text-on-surface-variant">Client Particulier</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WHiyRtIyGSJiPUfxy7S0syNbwDRM1nZgFQmJSrurHXG9pusQP3otU-iWEz069Nk-Jc2SRupjUe16z5vjs57mD6GERo479C_Q-dtbO1_7OeOqFBPZS2MGYNKdzCvZchTuvmW2Ycl8rhwx4iDP1dUzg1LjUqAx-o9pYK_M95tNF_23gHVqX0HOoHszXS0XvvUkMexVORK1fia7qVEkssmcpg21YbDI_ld-glPKbzNp51nTzpIkbKRabjySabJW4Vr99vEPjllEVQY4k"></div><a class="p-space-sm rounded-lg text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container transition-colors" data-path="connexion" href="#" title="Se déconnecter"><span class="material-symbols-outlined">logout</span></a></div></div></header><main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- Operational Status Bar (Top Anchor) -->
+<section class="w-full px-gutter-lg pt-space-md pb-space-lg">
+<div class="flex flex-wrap items-center justify-between gap-space-md pb-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-surface animate-ping"></span>
+          Atelier en direct
+        </span>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">
+          OR n° <span class="text-on-surface font-mono">CC-2024-9104</span>
+</span>
+<span class="text-on-surface-variant">•</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kia Sportage 1.6 T-GDI DCT7</span>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-mono font-bold tracking-widest">228 TU 4591</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base text-secondary">update</span>
+<span class="">Actualisé il y a 2 minutes</span>
+</div>
+</div>
+<!-- Active Intervention Banner -->
+<div class="w-full rounded-xl bg-surface-container p-gutter shadow-sm relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-64 h-64 rounded-full bg-secondary/5 pointer-events-none blur-2xl"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Vehicle & Service Header -->
+<div class="lg:col-span-5 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-secondary font-label-md text-label-md uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-lg">build_circle</span>
+<span class="">Intervention en cours</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">
+            Révision Complète des 30 000 km
+          </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Entretien réglementaire constructeur 75 points de contrôle, vidange homologuée Kia Shell Helix Ultra &amp; valise diagnostic KDS.
+          </p>
+<div class="flex items-center gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-base text-on-surface-variant">schedule</span>
+<span class="">Débuté à <strong class="font-semibold">09:30</strong></span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container-lowest text-secondary font-body-sm text-body-sm shadow-sm font-semibold">
+<span class="material-symbols-outlined text-base">alarm</span>
+<span class="">Restitution estimée : Aujourd'hui à 15:00</span>
+</div>
+</div>
+</div>
+<!-- Kia Master Technician Card -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative flex-shrink-0">
+<img class="w-14 h-14 rounded-full object-cover" data-alt="Close up professional portrait of Karim Trabelsi, an experienced Kia certified master mechanical technician smiling warmly in official red and black Kia City Cars workshop uniform in clean modern automotive dealership" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0HYPk7Laai_5rGScCTC4_8PGqHa19A0B4COxO3i3ZDsypMOJGM03aK3_K-iwIBRwDJ6DVHOigiwW8m3HV17YCjfFSVRCxoUlpsej_6Fvua_KLzXxC3B63nXImUzOXSpgNloI6Tfl1OBpoAnar7485r8SHi-38oTBrqZIhWNhK_sJCyD_mLBT1gvD_W0DEAF-ygk40KPeOiZ7_N9qRA_rLyCfKmqrjG3ObuF_nI9Gg1WK-7RI6uZ8bjw">
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-sm" title="Kia Master Expert">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-body-md text-body-md font-bold text-on-surface truncate">Karim Trabelsi</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Technicien Certifié Kia Master</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Baie d'intervention #04 • La Goulette</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs flex-shrink-0">
+<a class="flex items-center justify-center w-9 h-9 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" href="tel:+21636406000" title="Appeler le conseiller">
+<span class="material-symbols-outlined text-lg">call</span>
+</a>
+<button class="flex items-center justify-center w-9 h-9 rounded-lg bg-primary text-on-primary hover:bg-on-surface-variant transition-colors" onclick="document.getElementById('dialog-chat').showModal()" title="Envoyer un message" type="button">
+<span class="material-symbols-outlined text-lg">chat</span>
+</button>
+</div>
+</div>
+<!-- Real-Time Pulse Meter -->
+<div class="lg:col-span-3 flex flex-col justify-center items-start lg:items-end bg-surface-container-lowest lg:bg-transparent p-space-md lg:p-0 rounded-xl">
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Temps barème restant</span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+</div>
+<div class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight">
+            01<span class="text-secondary">:</span>45<span class="text-headline-sm font-label-md text-on-surface-variant pl-1">h</span>
+</div>
+<div class="w-full lg:w-44 h-2 bg-surface-container-high rounded-full overflow-hidden mt-space-xs">
+<div class="h-full bg-secondary rounded-full" style="width: 60%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-space-xs">Progression globale : 60%</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Dynamic Stepper / Timeline Workflow -->
+<section class="w-full px-gutter-lg pb-space-xl">
+<div class="bg-surface-container-lowest p-gutter rounded-xl shadow-sm">
+<div class="flex items-center justify-between pb-space-lg flex-wrap gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Protocole Kia Service 360°</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Avancement des Travaux en Atelier</h2>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-space-xs rounded bg-surface-container text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            Poste Réception : 08:30
+          </span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-space-xs rounded bg-surface-container text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            En Direct
+          </span>
+</div>
+</div>
+<!-- Stepper Component -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-space-md relative">
+<!-- Step 1: Validated -->
+<div class="flex flex-col gap-space-xs relative">
+<div class="flex items-center gap-space-xs mb-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="h-1 flex-1 bg-surface-container-high rounded"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">08:30 • Validé</span>
+<h3 class="font-body-md text-body-md font-bold text-on-surface">1. RDV Confirmé</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Planifié via espace web Kia City Cars Tunis.</p>
+</div>
+<!-- Step 2: Validated -->
+<div class="flex flex-col gap-space-xs relative">
+<div class="flex items-center gap-space-xs mb-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="h-1 flex-1 bg-surface-container-high rounded"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">09:15 • Enregistré</span>
+<h3 class="font-body-md text-body-md font-bold text-on-surface">2. Véhicule Reçu</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tour du véhicule effectué. Kilométrage : <span class="font-mono font-semibold">28 420 km</span>.</p>
+</div>
+<!-- Step 3: Validated -->
+<div class="flex flex-col gap-space-xs relative">
+<div class="flex items-center gap-space-xs mb-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="h-1 flex-1 bg-secondary rounded"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">10:15 • Clôturé</span>
+<h3 class="font-body-md text-body-md font-bold text-on-surface">3. Diagnostic &amp; Check</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Valise OBD zéro défaut moteur. Vidange complète validée.</p>
+</div>
+<!-- Step 4: Active Stage (Pulse) -->
+<div class="flex flex-col gap-space-xs relative p-space-sm -m-space-sm bg-surface-container/60 rounded-xl shadow-inner">
+<div class="flex items-center gap-space-xs mb-1">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold animate-pulse shadow-md">
+<span class="material-symbols-outlined text-lg">engineering</span>
+</div>
+<div class="h-1 flex-1 bg-surface-container-high rounded"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wide flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Étape Active (60%)
+          </span>
+<h3 class="font-body-md text-body-md font-bold text-secondary">4. En Réparation</h3>
+<p class="font-body-sm text-body-sm text-on-surface">Remplacement filtres &amp; contrôle train avant en cours de finalisation.</p>
+</div>
+<!-- Step 5: Upcoming -->
+<div class="flex flex-col gap-space-xs relative opacity-60">
+<div class="flex items-center gap-space-xs mb-1">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-base">local_car_wash</span>
+</div>
+<div class="h-1 flex-1 bg-surface-container-high rounded"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Prévu 13:45</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface">5. Contrôle &amp; Lavage</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Essai routier 5 km et lavage extérieur offert Kia Premium.</p>
+</div>
+<!-- Step 6: Upcoming -->
+<div class="flex flex-col gap-space-xs relative opacity-40">
+<div class="flex items-center gap-space-xs mb-1">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-base">key</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Prévu 15:00</span>
+<h3 class="font-body-md text-body-md font-semibold text-on-surface">6. Prêt pour Restitution</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Notification SMS &amp; remise des clés à l'accueil SAV.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Section: Additional Quotation in Waiting -->
+<section class="w-full px-gutter-lg pb-space-xl">
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md overflow-hidden relative" id="quote-panel">
+<div class="bg-secondary px-gutter py-space-sm flex items-center justify-between text-on-secondary flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-xl">notification_important</span>
+<span class="font-label-md text-label-md uppercase tracking-wider font-bold">
+            Action Requise • Devis Complémentaire en Attente de Votre Validation
+          </span>
+</div>
+<span class="font-label-sm text-label-sm opacity-90">Constat émis par Karim Trabelsi à 10:48</span>
+</div>
+<div class="p-gutter grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Visual Proof Inspection Photograph -->
+<div class="lg:col-span-4 flex flex-col gap-space-xs">
+<div class="relative rounded-lg overflow-hidden group shadow-sm bg-surface-container-high aspect-video lg:aspect-[4/3]">
+<img class="w-full h-full object-cover" data-alt="High quality detailed macro automotive mechanical photograph showing worn front brake pads caliper measured with precision vernier caliper in modern Kia repair workshop with natural bright workshop lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1iKzto1AwXzRBtysKFyPiG6WHB94lLLvCAxrJn3rpn7s6QeS2ssvQvs6PHK7anvRh7hj9lq14Z-60Gvt688JfNngSfG3LvxzbdMzlq4Xnrh4crqjeqzN4Ab_3Op5YQupWpXLY3UOVqxsL21__8u1pbrpXlz3kVnY16_lemy91Ctcbl4O_GisDw_1aApY0JQiW4fJEyHSgOexRPgaLdLRU-3vTax6gtMRsVCZMr7pWIvi9gRBbZmgHHw">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex flex-col justify-end p-space-sm text-on-primary">
+<span class="font-label-sm text-label-sm font-bold bg-secondary px-space-xs py-0.5 rounded self-start">Photo Inspection Relevée</span>
+<span class="font-body-sm text-body-sm mt-0.5">Disque &amp; Plaquette avant gauche (Épaisseur restante : 2.1 mm)</span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm">photo_camera</span>
+            Cliché certifié horodaté par tablette d'atelier #CC-TAB-09
+          </p>
+</div>
+<!-- Diagnostic Explanation & Financial Transparency -->
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-bold self-start">
+<span class="material-symbols-outlined text-sm">warning</span>
+            Usure critique relevée : 85%
+          </div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">
+            Remplacement du Jeu de Plaquettes de Frein Avant
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Le seuil de sécurité constructeur (3 mm) est atteint. Pour votre sécurité et pour préserver les disques de frein en acier trempé, nous vous recommandons le remplacement immédiat sans allongement du temps de restitution.
+          </p>
+<!-- Transparent Breakdown Table -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs">
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface">
+<span class="">Plaquettes de frein d'origine Kia OEM (Réf: 58101-D7A00)</span>
+<span class="font-mono font-semibold">210.000 TND</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface">
+<span class="">Main d’œuvre qualifiée barème constructeur (0.7h)</span>
+<span class="font-mono font-semibold">45.000 TND</span>
+</div>
+<div class="flex justify-between items-center text-body-sm font-body-sm text-on-surface-variant">
+<span class="">TVA légale (19%) &amp; Recyclage écologique pièces usagées</span>
+<span class="font-mono">25.000 TND</span>
+</div>
+<div class="h-0.5 bg-surface-variant my-1"></div>
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md font-bold text-on-surface">Montant Complémentaire Total TTC</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary font-mono">280.000 TND</span>
+</div>
+</div>
+</div>
+<!-- 1-Click Action Hub -->
+<div class="lg:col-span-3 flex flex-col gap-space-md justify-center">
+<div class="p-space-sm rounded bg-surface-container-low text-on-surface-variant font-body-sm text-body-sm flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-base text-secondary flex-shrink-0 mt-0.5">shield</span>
+<span class="">Pièces d'origine garanties 2 ans pièces &amp; main-d'œuvre réseau City Cars Kia Tunisie.</span>
+</div>
+<div class="flex flex-col gap-space-sm" id="quote-buttons-container">
+<button class="w-full py-space-md px-space-lg rounded-xl bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-label-lg text-label-lg font-bold shadow-md transition-all flex items-center justify-center gap-space-sm active:scale-95" onclick="handleQuoteAction('accept')" type="button">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="">Accepter &amp; Lancer les Travaux</span>
+</button>
+<button class="w-full py-space-sm px-space-md rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-md text-body-md font-medium transition-colors flex items-center justify-center gap-space-xs" onclick="handleQuoteAction('refuse')" type="button">
+<span class="material-symbols-outlined text-base">close</span>
+<span class="">Refuser pour le moment (M'alerter plus tard)</span>
+</button>
+</div>
+<div class="hidden p-space-md rounded-xl bg-surface-container text-on-surface text-center" id="quote-confirmation-message">
+<span class="material-symbols-outlined text-2xl text-secondary mb-1">done_all</span>
+<p class="font-body-md text-body-md font-bold" id="quote-status-title">Action prise en compte</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="quote-status-desc">Votre décision a été transmise en direct à l'atelier.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Split Mosaic: Health Index & Certified Digital Service Logbook -->
+<section class="w-full px-gutter-lg pb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left Column: Vehicle Health Index (Vital Diagnostics) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-gutter rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Audit Électronique KDS</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Indice de Santé Global</h3>
+</div>
+<span class="px-space-sm py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm font-bold text-on-surface">
+              Garantie 5 Ans Active
+            </span>
+</div>
+<!-- Circular Radial Graph and Metrics Summary -->
+<div class="flex items-center gap-space-lg p-space-md rounded-xl bg-surface-container-low">
+<div class="relative w-24 h-24 flex items-center justify-center flex-shrink-0">
+<svg class="w-full h-full -rotate-90" viewBox="0 0 36 36">
+<!-- Background circle -->
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<!-- Dynamic progress circle -->
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="94, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">94%</span>
+<span class="font-label-sm text-[9px] uppercase tracking-tighter text-on-surface-variant">Excellent</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h4 class="font-body-md text-body-md font-bold text-on-surface">Véhicule très sain</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Données certifiées conformes aux tolérances de Kia Corporation. Valeur résiduelle maximale préservée.
+              </p>
+</div>
+</div>
+<!-- Gauges System -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Metric 1: Battery -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-body-sm text-body-sm">
+<span class="flex items-center gap-space-xs text-on-surface font-semibold">
+<span class="material-symbols-outlined text-base text-secondary">battery_charging_full</span>
+                  Batterie AGM 12V 70Ah
+                </span>
+<span class="font-mono font-bold text-on-surface">98% (Excellente charge)</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 98%;"></div>
+</div>
+</div>
+<!-- Metric 2: Tires -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-body-sm text-body-sm">
+<span class="flex items-center gap-space-xs text-on-surface font-semibold">
+<span class="material-symbols-outlined text-base text-secondary">tire_repair</span>
+                  Pneumatiques Michelin 235/50 R19
+                </span>
+<span class="font-mono font-bold text-on-surface">78% (6.2 mm)</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 78%;"></div>
+</div>
+</div>
+<!-- Metric 3: Shock absorbers -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-body-sm text-body-sm">
+<span class="flex items-center gap-space-xs text-on-surface font-semibold">
+<span class="material-symbols-outlined text-base text-secondary">tune</span>
+                  Amortisseurs &amp; Suspension
+                </span>
+<span class="font-mono font-bold text-on-surface">92% d'efficacité</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 92%;"></div>
+</div>
+</div>
+<!-- Metric 4: Brake Fluid -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center font-body-sm text-body-sm">
+<span class="flex items-center gap-space-xs text-on-surface font-semibold">
+<span class="material-symbols-outlined text-base text-secondary">water_drop</span>
+                  Liquide de frein (Point d'ébullition)
+                </span>
+<span class="font-mono font-bold text-on-surface">&gt; 230°C (Conforme DOT4)</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 90%;"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-secondary text-lg">verified_user</span>
+<span class="">Rapport certifié Kia City Cars exportable lors de la revente.</span>
+</div>
+</div>
+<!-- Kia Direct Assistance Callout -->
+<div class="bg-primary text-on-primary p-gutter rounded-xl shadow-sm flex items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Besoin d'un renseignement ?</span>
+<h4 class="font-headline-sm text-headline-sm font-bold">Chef d'Atelier Central</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">Service Réception Tunis La Goulette</p>
+</div>
+<a class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-on-secondary-fixed-variant transition-colors whitespace-nowrap" href="tel:+21636406000">
+<span class="material-symbols-outlined text-base">phone</span>
+<span class="">36 406 000</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Certified Digital Service Logbook (Carnet Numérique) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-gutter rounded-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between flex-wrap gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Traçabilité Officielle</span>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface">Carnet d'Entretien Numérique Certifié</h3>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-colors" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-base">print</span>
+<span class="">Imprimer Carnet</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-primary text-on-primary font-body-sm text-body-sm hover:bg-on-surface-variant transition-colors" type="button">
+<span class="material-symbols-outlined text-base">download</span>
+<span class="">Télécharger Dossier Complet (PDF)</span>
+</button>
+</div>
+</div>
+<!-- Historic Entries List -->
+<div class="flex flex-col gap-space-md">
+<!-- Historic Item 1: In Progress Entry -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-secondary text-on-secondary flex flex-col items-center justify-center font-bold flex-shrink-0">
+<span class="font-label-sm text-[10px] uppercase">Auj.</span>
+<span class="font-headline-sm text-sm">2024</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-base font-bold text-on-surface">Révision Annuelle des 30 000 km</span>
+<span class="px-space-xs py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-[10px] font-bold">EN COURS</span>
+<span class="font-mono text-body-sm text-on-surface-variant">28 420 km</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Huile 0W-30 Kia C2/C3, Filtre à huile, Filtre d'habitacle antiallergène, Purge liquide lave-glace + 75 points de contrôle.
+                  </p>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span class="">Atelier : City Cars La Goulette</span>
+<span class="">•</span>
+<span class="">Conseiller : K. Trabelsi</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-start md:self-center">
+<span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-mono">
+                  OR: CC-2024-9104
+                </span>
+</div>
+</div>
+<!-- Historic Item 2: 15,000 km Maintenance -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest flex flex-col md:flex-row md:items-center justify-between gap-space-md hover:bg-surface-container-low transition-colors">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container text-on-surface flex flex-col items-center justify-center font-bold flex-shrink-0">
+<span class="font-label-sm text-[10px] uppercase">15 Jan</span>
+<span class="font-headline-sm text-sm">2024</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-base font-bold text-on-surface">Première Révision Constructeur (15 000 km)</span>
+<span class="font-mono text-body-sm font-semibold text-secondary">15 120 km</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Huile synthétique Kia homologuée ACEA C3, remplacement cartouche filtre huile, contrôle serrage trains roulants, permutation pneumatiques.
+                  </p>
+<!-- Certified Seal & Metadata -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-[11px] text-on-surface font-semibold">
+<span class="material-symbols-outlined text-xs text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+                      Certifié Concessionnaire Officiel City Cars
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Facture SAV-2024-0891</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold font-mono">342.500 TND</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-start md:self-center flex-shrink-0">
+<a class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface transition-all font-body-sm text-body-sm font-semibold shadow-sm" download="Facture-SAV-2024-0891.pdf" href="#">
+<span class="material-symbols-outlined text-base">picture_as_pdf</span>
+<span class="">Facture PDF</span>
+</a>
+</div>
+</div>
+<!-- Historic Item 3: 5,000 km Break-in check -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest flex flex-col md:flex-row md:items-center justify-between gap-space-md hover:bg-surface-container-low transition-colors">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container text-on-surface flex flex-col items-center justify-center font-bold flex-shrink-0">
+<span class="font-label-sm text-[10px] uppercase">05 Sep</span>
+<span class="font-headline-sm text-sm">2023</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-base font-bold text-on-surface">Contrôle Gratuit de Rodage &amp; Sécurité (5 000 km)</span>
+<span class="font-mono text-body-sm font-semibold text-secondary">4 980 km</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Vérification des niveaux (liquide de refroidissement, freins, lave-glace), contrôle étanchéité moteur &amp; mise à niveau offerte City Cars.
+                  </p>
+<!-- Certified Seal & Metadata -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-[11px] text-on-surface font-semibold">
+<span class="material-symbols-outlined text-xs text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+                      Certifié Réseau Officiel Kia Tunisie
+                    </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Fiche OR-2023-5512</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold font-mono">0.000 TND (Offert)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-start md:self-center flex-shrink-0">
+<a class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface transition-all font-body-sm text-body-sm font-semibold shadow-sm" download="Fiche-Controle-Rodage.pdf" href="#">
+<span class="material-symbols-outlined text-base">picture_as_pdf</span>
+<span class="">Rapport PDF</span>
+</a>
+</div>
+</div>
+<!-- Historic Item 4: Delivery -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest flex flex-col md:flex-row md:items-center justify-between gap-space-md hover:bg-surface-container-low transition-colors opacity-80">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container text-on-surface flex flex-col items-center justify-center font-bold flex-shrink-0">
+<span class="font-label-sm text-[10px] uppercase">12 Juin</span>
+<span class="font-headline-sm text-sm">2023</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-base font-bold text-on-surface">Mise en Route &amp; Livraison Véhicule Neuf</span>
+<span class="font-mono text-body-sm font-semibold text-secondary">12 km</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Préparation PDI constructeur, activation garantie 5 ans / 150 000 km Kia Corporation, pose immatriculation définitive.
+                  </p>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span class="">Showroom Kia Les Berges du Lac</span>
+<span class="">•</span>
+<span class="">Certificat de Conformité Validé</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-start md:self-center flex-shrink-0">
+<a class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-primary hover:text-on-primary text-on-surface transition-all font-body-sm text-body-sm font-semibold shadow-sm" download="Certificat-Garantie-Kia.pdf" href="#">
+<span class="material-symbols-outlined text-base">verified</span>
+<span class="">Certificat</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Digital Guarantee Seal Badge -->
+<div class="p-space-md rounded-xl bg-primary text-on-primary flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-on-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">workspace_premium</span>
+</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm font-bold">Garantie Constructeur Kia Préservée</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container">
+                  Tous les entretiens de votre Sportage sont strictement réalisés selon le cahier des charges Kia avec pièces certifiées d'origine.
+                </p>
+</div>
+</div>
+<span class="font-mono text-label-md px-space-md py-space-sm bg-surface-container-highest/20 rounded font-bold text-secondary-fixed whitespace-nowrap">
+              Échéance : 12/06/2028
+            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Modal for Quick Chat with Karim Trabelsi -->
+<dialog class="rounded-xl shadow-xl backdrop:bg-primary/40 p-0 max-w-lg w-full bg-surface-container-lowest text-on-surface" id="dialog-chat">
+<div class="p-gutter flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold">
+            KT
+          </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-base font-bold">Karim Trabelsi</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Conseiller Service &amp; Diagnostic SAV</span>
+</div>
+</div>
+<button class="p-space-xs rounded-lg hover:bg-surface-container text-on-surface-variant" onclick="document.getElementById('dialog-chat').close()" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm max-h-64 overflow-y-auto p-space-xs">
+<div class="bg-surface-container p-space-sm rounded-lg max-w-[85%] self-start">
+<p class="font-body-sm text-body-sm text-on-surface">
+            Bonjour M. Ben Amor. Le diagnostic électronique est vierge. Nous sommes en train de finaliser la vidange et les filtres. Avez-vous pu consulter notre photo des plaquettes avant ?
+          </p>
+<span class="font-label-sm text-[10px] text-on-surface-variant mt-1 block">10:50</span>
+</div>
+</div>
+<form class="flex items-center gap-space-xs pt-space-xs" method="dialog" onsubmit="event.preventDefault(); sendQuickMessage();">
+<input class="flex-1 px-space-md py-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary" id="quick-message-input" placeholder="Écrire votre message à Karim..." type="text">
+<button class="px-space-md py-space-sm rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold hover:bg-on-secondary-fixed-variant transition-colors flex items-center justify-center" type="submit">
+<span class="material-symbols-outlined text-base">send</span>
+</button>
+</form>
+</div>
+</dialog>
+</div>
+<script>
+  function handleQuoteAction(action) {
+    const buttonsContainer = document.getElementById('quote-buttons-container');
+    const messageBox = document.getElementById('quote-confirmation-message');
+    const title = document.getElementById('quote-status-title');
+    const desc = document.getElementById('quote-status-desc');
+    const panel = document.getElementById('quote-panel');
+
+    if (action === 'accept') {
+      buttonsContainer.classList.add('hidden');
+      messageBox.classList.remove('hidden');
+      title.textContent = 'Accord validé avec succès !';
+      title.className = 'font-body-md text-body-md font-bold text-secondary';
+      desc.textContent = 'Le technicien Karim Trabelsi a reçu la confirmation. Le jeu de plaquettes OEM est pris en charge immédiatement sans retard sur la restitution.';
+      
+      // Visual feedback on the panel
+      panel.classList.add('ring-2', 'ring-secondary');
+    } else {
+      buttonsContainer.classList.add('hidden');
+      messageBox.classList.remove('hidden');
+      title.textContent = 'Report enregistré';
+      title.className = 'font-body-md text-body-md font-bold text-on-surface';
+      desc.textContent = 'Votre refus a été noté. L’intervention initiale se poursuit selon le planning prévu. Un rappel sera programmé dans 3 000 km.';
+    }
+  }
+
+  function sendQuickMessage() {
+    const input = document.getElementById('quick-message-input');
+    if (input.value.trim() !== '') {
+      input.value = '';
+      alert('Votre message a été transmis à Karim Trabelsi (Technicien Kia). Réponse estimée sous 5 minutes.');
+      document.getElementById('dialog-chat').close();
+    }
+  }
+</script></main><footer class="w-full bg-primary-container text-on-primary-fixed mt-auto"><div class="w-full px-gutter-lg py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-primary font-bold tracking-tight">Kia City Cars</span><span class="font-label-sm text-label-sm text-on-primary-container">Concessionnaire Officiel en Tunisie</span></div><p class="font-body-sm text-body-sm text-on-primary-container">Direction Après-Vente &amp; Réparations Agréées - Zone Industrielle Le Kram, Tunis</p></div><div class="flex flex-wrap items-center gap-space-lg text-on-primary-container font-body-sm text-body-sm"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary">support_agent</span>Assistance 24/7 : 36 406 000</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary">verified</span>Garantie Constructeur 5 Ans</span></div><div class="font-label-sm text-label-sm text-on-primary-container text-center md:text-right">© 2024 City Cars Kia Tunisie. Tous droits réservés.</div></div></footer>
+
+<div class="fixed bottom-6 right-6 z-50 flex items-center group"><button type="button" onclick="window.scrollBy({top: 600, behavior: 'smooth'})" aria-label="Défiler vers le bas" class="flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-[#05141f] text-white border border-white/10 shadow-xl hover:bg-secondary hover:border-secondary transition-all active:scale-95 group-hover:shadow-2xl"><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold hidden md:inline text-white/90 group-hover:text-white">Défiler</span><span class="material-symbols-outlined text-lg transition-transform duration-200 group-hover:translate-y-0.5">arrow_downward</span></button></div></body></html>

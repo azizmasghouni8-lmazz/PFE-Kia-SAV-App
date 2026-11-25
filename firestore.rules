@@ -1,0 +1,69 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Users collection (profils SAV: CLIENT, RECEPTIONNAIRE, TECHNICIEN, ADMIN)
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+
+    // Vehicles collection (parc automobile Kia)
+    match /vehicles/{vehicleId} {
+      allow read, write: if true;
+    }
+
+    // Appointments collection (rendez-vous atelier)
+    match /appointments/{appointmentId} {
+      allow read, write: if true;
+    }
+
+    // Repair Orders collection (ordres de réparation atelier)
+    match /repair_orders/{orderId} {
+      allow read, write: if true;
+    }
+
+    // Spare parts catalog (catalogue pièces détachées K-DMS)
+    match /spare_parts/{partId} {
+      allow read, write: if true;
+    }
+
+    // Repair order parts (liaisons pièces consommées)
+    match /repair_order_parts/{partItemId} {
+      allow read, write: if true;
+    }
+
+    // Quotes collection (devis complémentaires atelier)
+    match /quotes/{quoteId} {
+      allow read, write: if true;
+    }
+
+    // Service History collection (carnet d'entretien numérique certifié après paiement et sortie)
+    match /service_history/{historyId} {
+      allow read, write: if true;
+    }
+
+    // Chef Requests collection (demandes clients RDV long terme via Assistance : Message SAV, Email, Appel)
+    match /chef_requests/{requestId} {
+      allow read, write: if true;
+    }
+
+    // Chef Notifications collection (alertes temps réel lors de modification/annulation de RDV ou nouvelle demande)
+    match /chef_notifications/{notificationId} {
+      allow read, write: if true;
+    }
+
+    // Workshop Team collection (techniciens, habilitations, disponibilité)
+    match /workshop_team/{techId} {
+      allow read, write: if true;
+    }
+
+    // Workshop Bays collection (ponts 01 à 12 et maintenance)
+    match /workshop_bays/{bayId} {
+      allow read, write: if true;
+    }
+
+    // Workshop Settings collection (paramètres globaux atelier)
+    match /workshop_settings/{settingId} {
+      allow read, write: if true;
+    }
+  }
+}

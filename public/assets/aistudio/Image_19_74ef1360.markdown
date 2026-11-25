@@ -1,0 +1,213 @@
+---
+name: Kia Aftersales Concession
+colors:
+  surface: '#fbf9f9'
+  surface-dim: '#dbd9da'
+  surface-bright: '#fbf9f9'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f5f3f4'
+  surface-container: '#efedee'
+  surface-container-high: '#eae7e8'
+  surface-container-highest: '#e4e2e3'
+  on-surface: '#1b1c1c'
+  on-surface-variant: '#43474b'
+  inverse-surface: '#303031'
+  inverse-on-surface: '#f2f0f1'
+  outline: '#74777c'
+  outline-variant: '#c4c7cc'
+  surface-tint: '#51606d'
+  primary: '#000000'
+  on-primary: '#ffffff'
+  primary-container: '#0e1d28'
+  on-primary-container: '#778694'
+  inverse-primary: '#b9c8d8'
+  secondary: '#b70f31'
+  on-secondary: '#ffffff'
+  secondary-container: '#db3047'
+  on-secondary-container: '#fffbff'
+  tertiary: '#000000'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#2a170b'
+  on-tertiary-container: '#9d7d6c'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#d5e4f4'
+  primary-fixed-dim: '#b9c8d8'
+  on-primary-fixed: '#0e1d28'
+  on-primary-fixed-variant: '#3a4855'
+  secondary-fixed: '#ffdad9'
+  secondary-fixed-dim: '#ffb3b4'
+  on-secondary-fixed: '#40000a'
+  on-secondary-fixed-variant: '#920023'
+  tertiary-fixed: '#ffdbc9'
+  tertiary-fixed-dim: '#e4bfab'
+  on-tertiary-fixed: '#2a170b'
+  on-tertiary-fixed-variant: '#5b4132'
+  background: '#fbf9f9'
+  on-background: '#1b1c1c'
+  surface-variant: '#e4e2e3'
+typography:
+  headline-xl:
+    fontFamily: Space Grotesk
+    fontSize: 36px
+    fontWeight: '700'
+    lineHeight: 44px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Space Grotesk
+    fontSize: 28px
+    fontWeight: '600'
+    lineHeight: 36px
+    letterSpacing: -0.01em
+  headline-md:
+    fontFamily: Space Grotesk
+    fontSize: 22px
+    fontWeight: '600'
+    lineHeight: 28px
+  headline-sm:
+    fontFamily: Space Grotesk
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 24px
+  body-lg:
+    fontFamily: Hanken Grotesk
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Hanken Grotesk
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Hanken Grotesk
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+  label-lg:
+    fontFamily: JetBrains Mono
+    fontSize: 14px
+    fontWeight: '600'
+    lineHeight: 20px
+    letterSpacing: 0.02em
+  label-md:
+    fontFamily: JetBrains Mono
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+    letterSpacing: 0.03em
+  label-sm:
+    fontFamily: JetBrains Mono
+    fontSize: 11px
+    fontWeight: '500'
+    lineHeight: 14px
+    letterSpacing: 0.04em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-lg: 1.5rem
+  margin: 1.5rem
+  margin-lg: 2rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 0.75rem
+  space-lg: 1.25rem
+  space-xl: 1.75rem
+---
+
+## Brand & Style
+
+Ce système de design incarne l'esprit architectural de Kia : « Movement that inspires », adapté aux opérations intensives du service après-vente (SAV) de City Cars. Le ton visuel est rigoureux, technique et premium. Il combine l'élégance minimaliste de la marque avec la robustesse fonctionnelle indispensable à un atelier automobile moderne.
+
+L'expérience cible les chefs d'atelier, conseillers de service et techniciens de diagnostic opérant sur des postes fixes à grand écran (desktop/kiosques d'atelier) ainsi que sur tablettes d'inspection en baie de réception. 
+
+L'approche stylistique fusionne un **Minimalisme Technique** et une structure **Haute Précision** :
+- Contraste net entre surfaces sombres institutionnelles (`Midnight Black`) et zones de travail claires ultra-lisibles en atelier.
+- Accents vifs avec le rouge signature Kia réservé aux actions critiques, états prioritaires et jalons clés.
+- Élimination des fioritures décoratives au profit de la lisibilité des métriques mécaniques, des VINs et des statuts de flux.
+
+## Colors
+
+La palette chromatique est articulée autour des codes officiels de la marque pour un rendu industriel haut de gamme :
+
+- **Primary (`#05141F` - Kia Midnight Black)** : Base structurelle majeure. Utilisé pour la navigation principale, les en-têtes de fiches d'atelier, les éléments textuels dominants et les bordures structurelles fortes.
+- **Secondary (`#BD1635` - Kia Live Red)** : Couleur d'action principale et de tension opérationnelle. Réservée aux boutons d'action décisifs (validation d'intervention, alertes de sécurité, signature client), aux indicateurs d'urgence et aux points d'attention immédiate.
+- **Tertiary (`#4A5568` - Gris Métallisé Technique)** : Données secondaires, libellés de fiches d'inspection, jauges passives et séparateurs de colonnes.
+- **Neutral (`#F8F9FA` - Blanc Pur Atelier & Surfaces Neutres)** : Arrière-plans d'application limitant la fatigue oculaire sous éclairage néon d'atelier, avec des conteneurs en `#FFFFFF`.
+
+### Palette Fonctionnelle Métier (Badges de Statut SAV)
+Pour assurer un balayage visuel instantané sur les tableaux de bord d'atelier :
+- **RDV Confirmé** : Slate Blue doux (Fond `#EDF2F7`, Texte `#2D3748`, Bordure `#CBD5E0`)
+- **Véhicule Reçu** : Cyan Industriel (Fond `#EBF8FF`, Texte `#2B6CB0`, Bordure `#BEE3F8`)
+- **En Diagnostic** : Ambre Technique (Fond `#FEFCBF`, Texte `#975A16`, Bordure `#F6E05E`)
+- **En Réparation** : Bleu Électrique Kia (Fond `#EBF4FF`, Texte `#2C5282`, Bordure `#BEE3F8`)
+- **Contrôle Qualité** : Violet Précision (Fond `#FAF5FF`, Texte `#6B46C1`, Bordure `#E9D8FD`)
+- **Prêt** : Vert Validation (Fond `#F0FFF4`, Texte `#22543D`, Bordure `#9AE6B4`)
+- **Alerte / Bloqué** : Rouge Signal (Fond `#FFF5F5`, Texte `#C53030`, Bordure `#FEB2B2`)
+
+## Typography
+
+La typographie exprime la modernité géométrique et la précision technique :
+
+- **Titres (`Space Grotesk`)** : Caractère géométrique affirmé rappelant l'ingénierie contemporaine de Kia. Utilisé pour les en-têtes d'écrans, numéros d'Ordre de Réparation (OR) et sections d'inspection.
+- **Corps de texte (`Hanken Grotesk`)** : Sans-serif moderne, nette et hautement lisible même lors de défilements rapides sur fiches de maintenance complexes.
+- **Données techniques et Métadonnées (`JetBrains Mono`)** : Police à chasse fixe dédiée aux immatriculations, numéros de châssis (VIN), codes défauts OBD-II, références de pièces d'origine et horodatages d'atelier.
+
+## Layout & Spacing
+
+Le layout repose sur une grille fluide optimisée pour écrans de concession (1920x1080 et écrans larges de diagnostic), modulable pour tablettes de check-in :
+
+- **Structure de grille** : 12 colonnes avec des gouttières de `1rem` (16px) sur desktop dense et `1.5rem` (24px) sur grands affichages muraux d'ordonnancement d'atelier.
+- **Densité d'affichage** : Conception haute densité (high-density compact mode). Les techniciens doivent visualiser l'intégralité d'un dossier (véhicule, client, pannes signalées, checklist carrosserie) sans défilement excessif.
+- **Hiérarchie d'espacement** :
+  - `space-xs` (4px) pour regroupements intimes (jauges, libellés VIN).
+  - `space-sm` (8px) pour espacement interne de badges et champs d'entrée.
+  - `space-md` (12px) pour le padding de cellules de tableaux et cartes techniques.
+  - `space-lg` (20px) pour l'espacement inter-composants et séparations de modules de contrôle.
+  - `space-xl` (28px) pour les délimitations de macro-sections (Ex: Réception vs Devis vs Clôture).
+
+## Elevation & Depth
+
+Le système emploie une approche de **Bordures Structurées et Niveaux Tonals**, complétée par des ombres mécaniques très subtiles. L'environnement d'atelier exige des contrastes tangibles et immédiats sans halos flous superflus.
+
+- **Niveau 0 (Toile de fond)** : `#F8F9FA`. Arrière-plan général neutre, non éblouissant.
+- **Niveau 1 (Cartes de travail & Tableaux)** : Fond `#FFFFFF` avec contour technique continu de `1px solid #E2E8F0`. Aucune ombre diffuse pour préserver la netteté des données alignées.
+- **Niveau 2 (Survol & Focus interactif)** : L'élément s'élève avec une bordure active `#05141F` ou `#BD1635` de `1.5px` et une ombre nette : `0 4px 12px rgba(5, 20, 31, 0.06)`.
+- **Niveau 3 (Tiroirs latéraux & Modales d'inspection rapide)** : Fond `#FFFFFF`, bordure gauche accentuée et ombre projetée directionnelle : `0 12px 32px rgba(5, 20, 31, 0.14)`.
+
+## Shapes
+
+Le niveau d'arrondi est strictement réglé sur **Soft (`1`)** :
+- Les cartes, formulaires, conteneurs d'inspection et blocs d'atelier utilisent un rayon de base de `0.25rem` (4px) à `0.5rem` (8px).
+- Ce parti pris géométrique tendu fait écho aux arêtes tranchantes des lignes de carrosserie Kia (EV6, Sportage) et aux outillages de diagnostic de haute précision.
+- Seuls les badges de statut et témoins d'alertes adoptent une courbure de type pilule (`9999px`) pour contraster immédiatement avec les matrices orthogonales des grilles de données.
+
+## Components
+
+### Boutons
+- **Primaire (Action d'avancement d'étape)** : Fond `Kia Red (#BD1635)`, texte blanc, typographie grasse, sans dégradé. Micro-interaction : passage à un ton plus sombre au survol.
+- **Secondaire (Gestion de dossier)** : Fond `#05141F`, texte blanc, hover `#1A2A38`.
+- **Tertiaire (Actions neutres d'atelier)** : Fond transparent, bordure `1px solid #CBD5E0`, texte `#2D3748`, hover fond `#EDF2F7`.
+
+### Badges de Statut (Workflow SAV)
+- Format pilule compacte (`padding: 4px 10px`).
+- Typographie `JetBrains Mono` 11px majuscule avec espacement de lettres marqué (`0.04em`).
+- Dot indicateur intégré (cercle plein de 6px) pour accessibilité chromatique.
+
+### Fiches d'Inspection et Check-in
+- **Sélecteur de carrosserie interactif** : Silhouette vectorielle du modèle Kia inspecté avec zones cliquables (chocs, rayures, impacts) identifiées par des pastilles numérotées en rouge Kia.
+- **Jauges de fluides & carburant** : Segments horizontaux précis gradués de 0% à 100% (par quart : 0, 1/4, 1/2, 3/4, 1/1) avec indication directe en litres estimés et couleur de réserve dynamique sous 15%.
+- **Champs VIN / Kilométrage** : Entrées à contraste renforcé, fond `#FFFFFF`, bordure `#CBD5E0`, focus ring franc `2px solid #05141F`. Les saisies de VIN sont automatiquement converties en majuscules avec découpage visuel monospacé par blocs.
+
+### Tableaux d'Ordres de Réparation (OR)
+- Hauteur de ligne dense (40px) pour un affichage condensé des véhicules en cours d'intervention.
+- Colonnes fixes : Numéro d'OR (mono), Immatriculation, Modèle / Finition, Statut actuel, Temps barème restant, Technicien assigné.
+- Barre de progression linéaire discrète (4px) en pied de chaque carte d'intervention représentant le temps écoulé vs temps barème alloué.

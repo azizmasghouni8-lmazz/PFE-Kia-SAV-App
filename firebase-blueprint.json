@@ -1,0 +1,371 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "Compte utilisateur SAV Kia (Client, Réceptionnaire/Chef d'atelier, Technicien, Admin)",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Identifiant unique" },
+        "nom": { "type": "string", "description": "Nom de famille" },
+        "prenom": { "type": "string", "description": "Prénom" },
+        "email": { "type": "string", "format": "email", "description": "Adresse email" },
+        "telephone": { "type": "string", "description": "Numéro de téléphone" },
+        "role": {
+          "type": "string",
+          "enum": ["CLIENT", "RECEPTIONNAIRE", "TECHNICIEN", "ADMIN"],
+          "description": "Rôle dans le système SAV"
+        },
+        "created_at": { "type": "string", "description": "Date de création ISO" }
+      },
+      "required": ["nom", "prenom", "email", "role"]
+    },
+    "Vehicle": {
+      "title": "Vehicle",
+      "description": "Véhicule client Kia enregistré",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "ID unique du véhicule" },
+        "client_id": { "type": "string", "description": "ID de l'utilisateur propriétaire" },
+        "immatriculation": { "type": "string", "description": "Plaque d'immatriculation (ex: 235 TU 8812)" },
+        "modele": { "type": "string", "description": "Modèle Kia (ex: Sportage, Seltos, EV6)" },
+        "chassis_vin": { "type": "string", "description": "Numéro de châssis VIN" },
+        "annee": { "type": "number", "description": "Année de mise en circulation" },
+        "kilometers": { "type": "number", "description": "Kilométrage actuel" },
+        "status": { "type": "string", "enum": ["in_workshop", "waiting_parts", "up_to_date", "scheduled"], "description": "Statut atelier du véhicule" },
+        "imageUrl": { "type": "string", "description": "URL visuel officiel HD" }
+      },
+      "required": ["immatriculation", "modele", "chassis_vin"]
+    },
+    "Appointment": {
+      "title": "Appointment",
+      "description": "Rendez-vous atelier programmé par un client ou réceptionné",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "ID du rendez-vous" },
+        "vehicle_id": { "type": "string", "description": "ID ou immatriculation du véhicule" },
+        "client_id": { "type": "string", "description": "ID du compte client" },
+        "client_name": { "type": "string", "description": "Nom du client" },
+        "client_email": { "type": "string", "description": "Email du client" },
+        "client_phone": { "type": "string", "description": "Téléphone de contact" },
+        "service_type": { "type": "string", "description": "Prestation demandée (ex: Révision 10 000 km)" },
+        "appointment_date": { "type": "string", "description": "Date et heure du rendez-vous" },
+        "date_str": { "type": "string", "description": "Date ISO YYYY-MM-DD" },
+        "time": { "type": "string", "description": "Heure du créneau (ex: 09:00)" },
+        "vehicle_name": { "type": "string", "description": "Modèle Kia du véhicule" },
+        "source": { "type": "string", "description": "Origine du RDV (client_week | chef_long_term)" },
+        "price": { "type": "string", "description": "Montant estimatif" },
+        "chef_decision": {
+          "type": "string",
+          "enum": ["PENDING", "CONFIRMED", "REJECTED"],
+          "description": "Décision du Chef d'Atelier (bloque la prise d'un autre RDV tant que PENDING)"
+        },
+        "updated_at": { "type": "string", "description": "Horodatage ISO de dernière modification client" },
+        "modification_note": { "type": "string", "description": "Détail de modification ou motif d'annulation" },
+        "status": {
+          "type": "string",
+          "enum": ["PENDING", "CONFIRMED", "REJECTED", "CANCELLED", "COMPLETED"],
+          "description": "Statut du rendez-vous"
+        }
+      },
+      "required": ["service_type", "appointment_date", "status"]
+    },
+    "RepairOrder": {
+      "title": "RepairOrder",
+      "description": "Ordre de réparation (OR) atelier en cours d'exécution",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Numéro officiel OR (ex: #OR-2026-9104)" },
+        "appointment_id": { "type": "string", "description": "ID du rendez-vous rattaché" },
+        "technician_id": { "type": "string", "description": "Technicien assigné" },
+        "vehicle_name": { "type": "string", "description": "Dénomination commerciale du véhicule" },
+        "plate": { "type": "string", "description": "Plaque d'immatriculation" },
+        "vin": { "type": "string", "description": "Numéro de châssis VIN" },
+        "client_id": { "type": "string", "description": "Identifiant unique du compte client propriétaire" },
+        "client_name": { "type": "string", "description": "Nom du client" },
+        "client_email": { "type": "string", "description": "Email du compte client" },
+        "client_phone": { "type": "string", "description": "Téléphone du client" },
+        "bay": { "type": "string", "description": "Emplacement de pont / baie mécanique" },
+        "service": { "type": "string", "description": "Intitulé des travaux d'atelier" },
+        "status": {
+          "type": "string",
+          "enum": ["VEHICULE_RECU", "EN_DIAGNOSTIC", "EN_REPARATION", "ATTENTE_PIECES", "CONTROLE_QUALITE", "PRET", "COMPLETED_AND_PAID"],
+          "description": "Statut officiel OR"
+        },
+        "waiting_parts_reason": { "type": "string", "description": "Motif et pièce attendue lorsque le véhicule est en attente pièce" },
+        "current_step": { "type": "number", "description": "Étape de progression 1 à 4" },
+        "progress_percent": { "type": "number", "description": "Pourcentage de 0 à 100%" },
+        "fuel_level": { "type": "number", "description": "Jauge de carburant en %" },
+        "km_in": { "type": "number", "description": "Kilométrage relevé à l'entrée" },
+        "diagnostic_notes": { "type": "string", "description": "Notes techniques et observations" },
+        "started_at": { "type": "string", "description": "Horodatage de début des travaux" },
+        "completed_at": { "type": "string", "description": "Horodatage de fin des travaux" }
+      },
+      "required": ["id", "plate", "service", "status"]
+    },
+    "SparePart": {
+      "title": "SparePart",
+      "description": "Pièce détachée d'origine Kia K-DMS",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "ID pièce" },
+        "reference_oem": { "type": "string", "description": "Référence OEM constructeur Kia" },
+        "name": { "type": "string", "description": "Désignation de la pièce" },
+        "category": { "type": "string", "description": "Catégorie mécanique ou électrique" },
+        "unit_price": { "type": "number", "description": "Prix unitaire en TND" },
+        "stock_qty": { "type": "number", "description": "Quantité disponible en stock magasin" },
+        "shelf_location": { "type": "string", "description": "Emplacement rayon magasin" }
+      },
+      "required": ["reference_oem", "name", "unit_price"]
+    },
+    "RepairOrderPart": {
+      "title": "RepairOrderPart",
+      "description": "Liaison Ordre de Réparation et Pièce détachée",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "ID unique" },
+        "repair_order_id": { "type": "string", "description": "ID de l'ordre de réparation" },
+        "spare_part_id": { "type": "string", "description": "Référence de la pièce" },
+        "quantity": { "type": "number", "description": "Quantité requise" },
+        "unit_price": { "type": "number", "description": "Prix unitaire facturé" },
+        "status": {
+          "type": "string",
+          "enum": ["PENDING", "APPROVED", "REJECTED"],
+          "description": "Statut de validation de la pièce"
+        }
+      },
+      "required": ["repair_order_id", "quantity", "unit_price", "status"]
+    },
+    "Quote": {
+      "title": "Quote",
+      "description": "Devis complémentaire d'atelier pour anomalie constatée",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Identifiant devis" },
+        "repair_order_id": { "type": "string", "description": "ID ordre de réparation lié" },
+        "vehicle_name": { "type": "string", "description": "Nom du véhicule" },
+        "plate": { "type": "string", "description": "Immatriculation du véhicule" },
+        "client_id": { "type": "string", "description": "Identifiant unique du compte client" },
+        "client_name": { "type": "string", "description": "Nom complet du client" },
+        "client_email": { "type": "string", "description": "Email du client" },
+        "client_phone": { "type": "string", "description": "Téléphone du client" },
+        "issued_by": { "type": "string", "description": "Technicien émetteur" },
+        "issued_time": { "type": "string", "description": "Heure d'émission" },
+        "bay": { "type": "string", "description": "Baie d'atelier" },
+        "total_amount": { "type": "number", "description": "Montant total en TND TTC" },
+        "parts_price": { "type": "number", "description": "Montant pièces TTC" },
+        "labor_price": { "type": "number", "description": "Montant main d'oeuvre TTC" },
+        "title": { "type": "string", "description": "Objet de la réparation" },
+        "description": { "type": "string", "description": "Justification technique de l'usure ou commande pièce" },
+        "measured_thickness": { "type": "string", "description": "Mesure constatée (ex: 2.1 mm)" },
+        "min_thickness": { "type": "string", "description": "Seuil mini d'alerte constructeur" },
+        "photo_url": { "type": "string", "description": "Preuve photo prise sur tablette" },
+        "part_availability": { "type": "string", "enum": ["in_stock", "out_of_stock"], "description": "Disponibilité en stock au moment de l'envoi" },
+        "requires_part_order": { "type": "boolean", "description": "Indique si une commande fournisseur et attente de livraison sont nécessaires" },
+        "estimated_delivery_delay": { "type": "string", "description": "Délai estimé de livraison de la pièce commandée" },
+        "client_comment": { "type": "string", "description": "Avis libre ou commentaire écrit par le client" },
+        "responded_at": { "type": "string", "description": "Horodatage de réponse client" },
+        "tech_stock_confirmed": { "type": "boolean", "description": "Confirmation par le technicien auprès de l'équipe stock" },
+        "tech_stock_confirmed_at": { "type": "string", "description": "Horodatage confirmation technicien avec équipe stock" },
+        "chef_delivery_confirmed": { "type": "boolean", "description": "Confirmation exclusive par le Chef d'Atelier de la réception en stock" },
+        "chef_delivery_confirmed_at": { "type": "string", "description": "Horodatage validation réception pièce par le Chef" },
+        "status": {
+          "type": "string",
+          "enum": ["PENDING", "APPROVED", "REJECTED"],
+          "description": "Validation du client"
+        }
+      },
+      "required": ["repair_order_id", "total_amount", "status"]
+    },
+    "ServiceHistory": {
+      "title": "ServiceHistory",
+      "description": "Entrée archivée du carnet d'entretien numérique client après paiement et sortie d'atelier",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Identifiant unique de l'historique" },
+        "or_number": { "type": "string", "description": "Numéro d'ordre de réparation" },
+        "plate": { "type": "string", "description": "Immatriculation du véhicule" },
+        "vin": { "type": "string", "description": "Numéro de châssis VIN" },
+        "vehicle_name": { "type": "string", "description": "Modèle Kia" },
+        "client_id": { "type": "string", "description": "Identifiant unique du compte client" },
+        "client_name": { "type": "string", "description": "Nom du client" },
+        "client_email": { "type": "string", "description": "Email du compte client" },
+        "client_phone": { "type": "string", "description": "Téléphone du client" },
+        "title": { "type": "string", "description": "Intitulé de l'intervention" },
+        "amount": { "type": "string", "description": "Montant TTC réglé" },
+        "payment_method": { "type": "string", "description": "Mode de paiement" },
+        "paid_at": { "type": "string", "description": "Date et heure de sortie/paiement" }
+      },
+      "required": ["id", "or_number", "title"]
+    },
+    "ChefRequest": {
+      "title": "ChefRequest",
+      "description": "Demande de rendez-vous long terme envoyée au Chef d'Atelier via Assistance (Message SAV, Email ou Appel)",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Identifiant unique de la demande" },
+        "client_name": { "type": "string", "description": "Nom complet du client" },
+        "client_phone": { "type": "string", "description": "Téléphone du client" },
+        "client_email": { "type": "string", "description": "Email du client" },
+        "vehicle_name": { "type": "string", "description": "Modèle Kia" },
+        "plate": { "type": "string", "description": "Immatriculation" },
+        "channel": {
+          "type": "string",
+          "enum": ["sav_message", "email", "call"],
+          "description": "Canal de contact choisi"
+        },
+        "preferred_period": { "type": "string", "description": "Période ou date souhaitée après cette semaine" },
+        "service_type": { "type": "string", "description": "Prestation demandée" },
+        "message": { "type": "string", "description": "Détail de la demande client" },
+        "status": {
+          "type": "string",
+          "enum": ["PENDING", "SCHEDULED", "ARCHIVED"],
+          "description": "Statut de traitement par le Chef d'Atelier"
+        },
+        "scheduled_date": { "type": "string", "description": "Date planifiée par le Chef (YYYY-MM-DD)" },
+        "created_at": { "type": "string", "description": "Horodatage ISO de création" }
+      },
+      "required": ["id", "client_name", "channel", "message", "status"]
+    },
+    "ChefNotification": {
+      "title": "ChefNotification",
+      "description": "Notification temps réel adressée au Chef d'Atelier (modification ou annulation de RDV client avant 24h, nouveau RDV en attente)",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Identifiant unique de la notification" },
+        "type": {
+          "type": "string",
+          "enum": ["rdv_modified", "rdv_cancelled", "rdv_new"],
+          "description": "Type d'événement RDV"
+        },
+        "appointment_id": { "type": "string", "description": "ID du rendez-vous concerné" },
+        "client_name": { "type": "string", "description": "Nom complet du client" },
+        "client_phone": { "type": "string", "description": "Téléphone du client" },
+        "plate": { "type": "string", "description": "Plaque d'immatriculation" },
+        "title": { "type": "string", "description": "Titre court de l'alerte" },
+        "message": { "type": "string", "description": "Détail complet de l'action effectuée" },
+        "read": { "type": "boolean", "description": "Indique si le Chef a lu la notification" },
+        "created_at": { "type": "string", "description": "Horodatage ISO de création" }
+      },
+      "required": ["id", "type", "appointment_id", "client_name", "message", "read"]
+    },
+    "WorkshopTechnician": {
+      "title": "WorkshopTechnician",
+      "description": "Fiche technicien atelier, habilitations Kia et disponibilité temps réel",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Identifiant unique technicien" },
+        "name": { "type": "string", "description": "Nom complet du technicien" },
+        "initials": { "type": "string", "description": "Initiales" },
+        "role": { "type": "string", "description": "Rôle métier (Master Tech, Tech Généraliste, Spécialiste EV/HEV, Contrôleur Qualité)" },
+        "certifications": { "type": "array", "description": "Liste des certifications Kia (Haute Tension EV/HEV, Diagnostic KDS, Freinage/ADAS, Climatisation)" },
+        "availability": { "type": "string", "enum": ["en_poste", "en_pause", "essai_route", "absent"], "description": "Disponibilité en temps réel" },
+        "shiftStart": { "type": "string", "description": "Heure début de shift" },
+        "shiftEnd": { "type": "string", "description": "Heure fin de shift" },
+        "maxLoadPercent": { "type": "number", "description": "Charge maximale de travail (%)" },
+        "currentLoadPercent": { "type": "number", "description": "Charge actuelle (%)" },
+        "active": { "type": "boolean", "description": "Technicien actif ou désactivé" },
+        "assignedBayId": { "type": "string", "description": "Pont principal rattaché" },
+        "phone": { "type": "string", "description": "Téléphone interne" }
+      },
+      "required": ["id", "name", "role", "availability", "active"]
+    },
+    "WorkshopBay": {
+      "title": "WorkshopBay",
+      "description": "Poste hydraulique / baie atelier (Pont 01 à Pont 12), spécialité et état maintenance",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Numéro de pont (01 à 12)" },
+        "name": { "type": "string", "description": "Nom du pont (ex: PONT 01)" },
+        "specialty": { "type": "string", "description": "Spécialité affectée au pont" },
+        "status": { "type": "string", "enum": ["open", "maintenance"], "description": "Statut ouverture du pont" },
+        "maintenanceReason": { "type": "string", "description": "Motif si pont en maintenance" },
+        "leadTechnicianId": { "type": "string", "description": "ID technicien titulaire" },
+        "leadTechnicianName": { "type": "string", "description": "Nom technicien titulaire" }
+      },
+      "required": ["id", "name", "specialty", "status"]
+    },
+    "WorkshopSettings": {
+      "title": "WorkshopSettings",
+      "description": "Paramètres globaux de l'atelier (horaires, délais RDV, grille tarifaire, TVA, seuils stock, concession)",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Identifiant document (default)" },
+        "weekdayOpen": { "type": "string" },
+        "weekdayClose": { "type": "string" },
+        "saturdayOpen": { "type": "string" },
+        "saturdayClose": { "type": "string" },
+        "saturdayEnabled": { "type": "boolean" },
+        "closedDates": { "type": "array" },
+        "maxBookingsPerSlot": { "type": "number" },
+        "minBookingLeadHours": { "type": "number" },
+        "clientModifyDeadlineHours": { "type": "number" },
+        "hourlyLaborRateTnd": { "type": "number" },
+        "vatRatePercent": { "type": "number" },
+        "maintenancePrices": { "type": "object" },
+        "lowStockThreshold": { "type": "number" },
+        "autoConfirmAppointments": { "type": "boolean" },
+        "autoNotifyReadyClient": { "type": "boolean" },
+        "dealershipName": { "type": "string" },
+        "dealershipAddress": { "type": "string" },
+        "dealershipPhone": { "type": "string" },
+        "dealershipTaxId": { "type": "string" },
+        "soundConfig": { "type": "object", "description": "Paramètres audio et profil sonore par rôle" }
+      },
+      "required": ["id", "minBookingLeadHours", "clientModifyDeadlineHours", "vatRatePercent"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "Comptes utilisateurs et profils SAV Kia"
+    },
+    "/vehicles/{vehicleId}": {
+      "schema": "Vehicle",
+      "description": "Parc automobile et véhicules enregistrés"
+    },
+    "/appointments/{appointmentId}": {
+      "schema": "Appointment",
+      "description": "Rendez-vous et planning atelier"
+    },
+    "/repair_orders/{orderId}": {
+      "schema": "RepairOrder",
+      "description": "Ordres de réparation actifs et terminés"
+    },
+    "/spare_parts/{partId}": {
+      "schema": "SparePart",
+      "description": "Catalogue et stock des pièces de rechange"
+    },
+    "/repair_order_parts/{partItemId}": {
+      "schema": "RepairOrderPart",
+      "description": "Liaison des pièces consommées par OR"
+    },
+    "/quotes/{quoteId}": {
+      "schema": "Quote",
+      "description": "Devis complémentaires émis en cours d'intervention"
+    },
+    "/service_history/{historyId}": {
+      "schema": "ServiceHistory",
+      "description": "Historique certifié des interventions clôturées et payées"
+    },
+    "/chef_requests/{requestId}": {
+      "schema": "ChefRequest",
+      "description": "Demandes clients de RDV long terme adressées au Chef d'Atelier"
+    },
+    "/chef_notifications/{notificationId}": {
+      "schema": "ChefNotification",
+      "description": "Notifications temps réel envoyées au Chef d'Atelier lors de modifications ou annulations client"
+    },
+    "/workshop_team/{techId}": {
+      "schema": "WorkshopTechnician",
+      "description": "Fiches techniciens, habilitations et disponibilité temps réel"
+    },
+    "/workshop_bays/{bayId}": {
+      "schema": "WorkshopBay",
+      "description": "Affectation et ouverture des 12 ponts mécaniques et EV"
+    },
+    "/workshop_settings/{settingId}": {
+      "schema": "WorkshopSettings",
+      "description": "Paramètres généraux de l'atelier SAV"
+    }
+  }
+}
